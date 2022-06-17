@@ -1,0 +1,17 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install Apache package
+    apt:
+      name: apache2
+    #  state: absent
+   #   when: ansible_distribution == "Kali"
+
+ # - name: uninstall apache2 package
+  #  apt:
+   #   name: apache2
+     #state: absent
+    #  when: ansible_distribution == "Ubuntu"
